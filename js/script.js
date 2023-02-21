@@ -214,7 +214,7 @@ window.onload = function(){
         loop: true,
         speed: 1500,
         autoplay: {
-            delay: 1000,
+            delay: 2000,
             disableOnInteraction: false,
         },
         navigation: {
