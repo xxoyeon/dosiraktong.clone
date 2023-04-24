@@ -393,11 +393,11 @@ html.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 180px;
-    height: 55px;
-    padding: 0 20px;
+    max-width: 250px;
+    width: 22vw;
+    height: 9vh;
     margin-top: 30px;
-    font-size: 16px;
+    font-size: 20px;
 }
 .swvisual-link a {
     display: flex;
@@ -462,8 +462,7 @@ html.active {
 
 @media screen and (max-width: 1024px) {
 	.visual {
-		min-height: 800px;
-		height: 48.95px;
+		min-height: 100vh;
 	}
 }
 
@@ -472,6 +471,7 @@ html.active {
 }
 
 /* 서비스 */
+
 .service {
     position: relative;
     display: block;
@@ -485,10 +485,14 @@ html.active {
 
 .service h2 {
 	text-align: center;
+    font-size: 3em;
+    margin-bottom: 5vh;
 	/* 글자 셋팅 */
 }
 
 .service h2 span {
+    color: #3a68b2;
+    font-family: "Godo";
 	/* 글자색만 수정 */
 }
 
@@ -496,7 +500,38 @@ html.active {
 	display: flex;
 	justify-content: space-between;
 	height: 680px;
+}
 
+.service-link-txt {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 2vw;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.service-link-txt span {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.service-link-txt p {
+    font-size: 0.8em;
+    margin: 20px 0;
+}
+
+.service-link-box {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #fff;
+    width: 200px;
+    height: 5vh;
+    align-items: center;
+    
 }
 
 .service-left {
@@ -623,17 +658,62 @@ html.active {
 	justify-content: space-between;
 	width: 100%;
 	height: 430px;
-	background: green;
 }
+
+.info-contents h2 {
+    font-size: 2.5em;
+    margin-bottom: 1.5vh;
+}
+
+.info-contents span {
+    color: #3a68b2;
+    font-family: "Godo";
+}
+
 .info-left {
 	width: calc(50% - 10px);
 	height: 100%;
-	background-color: yellow;
 }
 .info-right {
 	width: calc(50% - 10px);
 	height: 100%;
-	background-color: yellowgreen;
+}
+
+.info-right h4{
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.info-right span {
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+.info-right div {
+    margin-top: 40px;
+}
+
+.info-right p {
+    margin-top: 10px;
+}
+
+.info-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 140px;
+    height: 50px;
+    padding: 0 10px;
+    margin-top: 90px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid #222;
+}
+
+.info-about span {
+    color: #222;
 }
 
 /* 정보 반응형 */

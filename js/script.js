@@ -212,9 +212,9 @@ window.onload = function(){
     let swVisual = new Swiper(".swvisual", {
         effect: "fade",
         loop: true,
-        speed: 1500,
+        speed: 3000,
         autoplay: {
-            delay: 2000,
+            delay: 2500,
             disableOnInteraction: false,
         },
         navigation: {
